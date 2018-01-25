@@ -1,0 +1,75 @@
+
+1
+
+請用 'J'+學號 作為類別名, 以 java 執行該類別的byte code時會輸出
+
+   姓名: your name
+
+   生日: 19XX/XX/XX
+
+2	
+在該類別內實作類別方法
+static public long days(Date begin, Date end){...} //傳回 begin 到 end這段時間的天數
+
+
+static public float years(Date begin, Date end){...} //傳回 begin 到 end這段時間有幾年
+
+並利用這兩個方法將題1的內容新增兩欄資訊(以年/日為單位輸出你你的年紀)
+
+3	
+實作類別方法
+static public double[] getValuesFromArgs(String[] data){...} //將字串陣列中的字串全部轉為浮點數，最後將這些數值存放在陣列並回傳
+
+static public double averageOf(double[] data){...}  //傳回資料的平均值
+
+static public double deviationOf(int[] data){...} //傳回資料的標準差
+
+利用這些方法，處理如下列命令
+
+C:\>java  'J'+學號  1 389 -27 133 19 456
+
+ 資料： -27 1 19 133 389 456
+ 平均： 161.833   標準差： 210.189
+
+4	
+ 跟據資料檔 GDP.dat 的內容，請完成 class GDP2016{},
+
+      該類別有三個唯讀屬性：
+
+  Country    // 國名
+
+  GDP        // 國內生產毛額
+
+  Continent // 洲
+
+封裝其對應之變數，
+
+實作三個 getter methods， 
+
+多載其建構式，
+
+覆寫相關之方法，當使用System直接輸出該類別實例時，會看到類似的輸出：
+
+Taiwan(519149 M$)
+
+5	
+為GDP2016新增類別方法
+
+static public GDP2016[] fromFile(String filename) throws Exception{...}，
+在main()中呼叫此方法(以"GDP.dat"作為參數)，傳回的陣列大小要與檔案內資料筆數相符！
+並使用for each 語法列印出這些資訊。
+ 
+
+6	
+為GDP2016新增物件方法
+
+public boolean isIn(String continent){}
+
+e.g  taiwan.isIn("Asia") returns true
+
+     taiwan.isIn("NorthAmerica") returns false
+
+走訪上題傳回的陣列，利用此方法輸出所有位於亞洲的國家及其GDP
+
+7	請將題5傳回的陣列，依【GDP】作降冪排序；並依序輸出這些國家/GDP資訊。
+目前你們只能利用Bubble Sort作排序... 利用Java utility是行不通的; 除非你懂得修改 GDP2016...

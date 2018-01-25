@@ -1,0 +1,16 @@
+中英對照
+Country					國名
+Military Budget			國防預算(十億)
+Main battle tanks		主力戰車
+Aircraft carriers		航母
+AWS						兩棲艦
+Cruisers				巡洋艦
+Destroyers				驅逐艦
+Frigates				巡防艦
+Corvettes				護衛艦
+Nuclear submarines		核子潛艇
+Non-nuclear Submarines	傳統潛艇
+Military aircraft		戰機
+Attack helicopters		攻擊直昇機
+Nuclear weapons			核武
+Military satellites		軍用衛星

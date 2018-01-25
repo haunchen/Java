@@ -1,0 +1,52 @@
+﻿1	
+以Java code讀取 MilitaryPowers.csv，將其內容輸出到螢幕上。
+
+2	
+
+實作class MilitaryPower, 該類別包含上述檔案中15個欄位(有提供欄位名中英對照檔)。
+
+若 MilitaryPower turkey; 代表檔案中第一筆記錄，請覆寫相關方法使得直接輸出  turkey 時看到的內容為
+
+
+土耳其 [陸:2504, 海:38, 空:674]
+
+//海: 38=0+0+0+0+18+6+0+14
+
+// 空: 674=335+339
+
+ 
+
+3	
+為class MilitaryPower實作一類別方法，該方法接收一個檔名，最後傳回一個串列，其中包含該檔案中所有代表各國軍力的MilitaryPower實體物件。
+
+4	
+前題傳回的串列，請使用 java.util 套件中的工具方法(該類別的 natural order 指定為年度國防預算)以降冪方式排序，再以foreach輸出結果。
+
+5	
+使用 java.util 套件中的工具方法將其依戰機數量(不可改寫該類別的 natural order)以降冪方式排序，再以 foreach 輸出結果。
+
+6	
+為class MilitaryPower 實作一類別方法，該方法不用任何參數，呼叫後回傳一個集合物件(裏面的成員是擁有核武的MilitaryPorwer實體物件)。且直接輸出該集合物件，各擁核國家是依其 Natural order 順序輸出的。
+
+ 
+
+7	
+
+在螢幕上每秒輸出一次系統時間；另外有個倒數 counter 初值為100，每0.1秒便count down一次，當該值為零時結束這個 Java程式。另外你能作到只輸出時分秒而不包括日期嗎？
+
+ 
+
+8	
+統計一下 tiffany.raw 這個 raw image file 中，各灰階值出現的次數。請輸出結果。
+
+9	
+
+在此次測驗中class GreyLevelImage只要能提供
+
+public int getWidth();
+
+public int getHeight();
+
+public byte[] getImgData();
+
+便可利用RawImgViewer(String title, GreyLevelImage img)來秀圖。請將上題的數據以直方圖(Histogram)呈現出來
